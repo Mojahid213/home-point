@@ -7,7 +7,7 @@ import twitter from "../../../Img/in.png";
 
 const Footer = () => {
   return (
-    <section className="background" style={{ height: 'auto' }}>
+    <section className="background" style={{ height: 'auto',margin:'0' }}>
       <div>
         <h1 className="text-center custom_Nav_brand"> <span
 
