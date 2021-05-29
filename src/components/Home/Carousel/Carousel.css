@@ -23,3 +23,9 @@
         font-size: 8vw;
     }
 }
+/* If screen is larger then 768px */
+@media only screen and (min-width:768px){
+    .carousel_Backgorund{
+        min-height: 490px;
+    }
+}

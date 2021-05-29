@@ -16,7 +16,7 @@ const Carousel = () => {
                 <div className="carousel-inner carousel_Backgorund">
                     <div className="carousel-item active">
                         <div className="row d-flex align-items-center mt-5 mb-5">
-                            <div className="col-md-6 order-2 order-md-1 d-flex justify-content-center align-items-center">
+                            <div className="col-md-6 order-2 mt-md-5 order-md-1 d-flex justify-content-center align-items-center">
                                 <div className="p-4 p-md-3">
                                     <h1 className="All-Slide-heading">FIND THE BEST HOUSE THAT FITS YOU</h1>
                                     <p className="slider_para_des my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officia repellendus rem sapiente. Aut, odio sed sequi itaque qui nihil, eaque aliquid, pariatur tempora ea minima quasi vitae. Laboriosam, quam!</p>
