@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+.carousel_Backgorund{
+    background-color: rgb(13, 130, 177);
+}
+
+.All-Slide-heading{
+    font-family: 'Roboto Slab', serif;
+    color: rgba(6, 2, 10, 0.733);
+    font-size: 4vw;
+}
+.slider_para_des{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+/* If screen is less then 768px */
+@media only screen and (max-width:768px){
+    .All-Slide-heading{
+        font-size: 8vw;
+    }
+}
