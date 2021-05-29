@@ -3,11 +3,14 @@ import './Footer.css'
 import facebook from "../../../Img/fb.png";
 import instagram from "../../../Img/ig.png";
 import twitter from "../../../Img/in.png";
+import copyright from "../../../Img/copyright.png"
 
 
 const Footer = () => {
   return (
-    <section class="background"style={{ height: "600px" }}>
+      
+    <section class="background">
+        <div>
         <div>
             <h1 class="text-center custom_Nav_brand"> <span
          
@@ -69,6 +72,16 @@ const Footer = () => {
         </div>
         
       </div>
+      <footer class="text-center">
+          <div>
+              <img src={copyright} style={{width:"20px"}}/>
+          <small>All rights reserved to <span class="custom_Nav_brand">Home-point</span></small>
+          </div>
+          
+
+      </footer>
+        </div>
+        
     </section>
   );
 };
