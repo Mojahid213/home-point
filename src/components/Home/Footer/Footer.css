@@ -1,0 +1,10 @@
+.footer-design a{
+    
+    text-decoration: none;
+    color: rgba(6, 2, 10, 0.733);
+}
+.background{
+    background-color: #dfe6e9;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(6, 2, 10, 0.733);
+}
