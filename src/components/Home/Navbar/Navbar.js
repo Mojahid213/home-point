@@ -1,7 +1,12 @@
 import React from 'react';
 import './Navbar.css'
+import {Link} from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../../features/userSlice';
+
 
 const Navbar = () => {
+    const user  = useSelector(selectUser);
     return (
         <div>
             <nav className="d-flex navbar navbar-expand-lg navbar-light shadow-sm bg-light">
@@ -19,9 +24,11 @@ const Navbar = () => {
                                 <a className="nav-link text-dark text-center fw-bold" href="/#">Items</a>
                             </li>
                             <li className="nav-item mx-md-2">
-                                <a className="nav-link text-light text-center rounded bg-success fw-bold " href="/#">
-                                    Login
-                                </a>
+                                <Link className="nav-link text-light text-center rounded bg-success fw-bold " to="/login">
+                                    {
+                                        user? user.name : "Login"
+                                    }
+                                </Link>
                             </li>
                         </ul>
                     </div>

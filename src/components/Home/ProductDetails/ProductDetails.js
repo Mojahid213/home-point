@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import {Link} from 'react-router-dom'
 
 const ProductDetails = ({ detail }) => {
     return (
@@ -12,7 +13,7 @@ const ProductDetails = ({ detail }) => {
                 </div>
                 <div className="card-footer d-flex justify-content-between align-items-center">
                     <span><i class="bi bi-tag-fill"></i> {detail.price}</span>
-                    <button className="btn btn-success">Buy Now</button>
+                    <Link to="/login"><button className="btn btn-success">Buy Now</button></Link>
                 </div>
             </div>
         </div>

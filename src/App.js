@@ -4,31 +4,30 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import Login from './components/Login/Login';
+import {selectUser } from './features/userSlice';
+import Login from './components/Login/Login'
 import { useSelector } from 'react-redux';
-import { selectUser } from './features/userSlice';
+import Destination from "./components/Destinatioin/Destinaiton"
 
 function App() {
   const user = useSelector(selectUser);
   return (
     <Router>
       <Switch>
-        <Route  path="/home">
+      <Route exact path="/home">
           <Home></Home>
-
         </Route>
-        <Route  path="/login">
-          
+        <Route path="/login">
           {
-            user?<Home/> :<Login/> 
+              user? <Destination></Destination> : <Login></Login>
           }
-
         </Route>
-
-        </Switch>
-        </Router>
+        <Route path="/">
+          <Home></Home>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

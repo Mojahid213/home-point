@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {login} from '../../features/userSlice'
+import './Login.css'
 
 const Login = () => {
     const [name,setName] = useState("");
@@ -20,23 +21,23 @@ const Login = () => {
     }
    
     return (
-        <div className="container login">
-            <form  className="white login-form" onSubmit={(e) => handleSubmit(e)}>
-                <h5 className="grey-text text-darken-3">Sign In</h5>
-                <div className="input-field">
+        <div className="Login-Main-Div">
+            <form  className="Login_Form" onSubmit={(e) => handleSubmit(e)}>
+                <h5 className="text-center text-light">Sign In</h5>
+                <div className="form-group">
                     {/* <label htmlFor="email">Email</label> */}
-                    <input type="name" value={name} onChange={(e)=>setName(e.target.value)} placeholder="name"/>
+                    <input className="form-control my-2" type="name" value={name} onChange={(e)=>setName(e.target.value)} placeholder="name"/>
                 </div>
-                <div className="input-field">
+                <div className="form-group">
                     {/* <label htmlFor="password">password</label> */}
-                    <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="email"/>
+                    <input className="form-control my-2" type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="email"/>
                 </div>
-                <div className="input-field">
+                <div className="form-group">
                     {/* <label htmlFor="password">password</label> */}
-                    <input type="password" valu={password} onChange={(e)=>setPassword(e.target.value)} placeholder="password"/>
+                    <input className="form-control my-2" type="password" valu={password} onChange={(e)=>setPassword(e.target.value)} placeholder="password"/>
                 </div>
                 <div className="input-field">
-                    <button className="btn pink lighten-1 z-depth-0" type="submit">LogIn</button>
+                    <button className="btn btn-dark" type="submit">LogIn</button>
                 </div>
 
             </form>
